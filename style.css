@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section:nth-child(1){
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgb(24, 72, 156);
+}
+section:nth-child(1) > a{
+  font-size: 20pt;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+}
+section:nth-child(1) > p {
+  padding: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+section:nth-child(1) > p:last-child{
+  justify-content: flex-end;
+}
+section:nth-child(1) > p:last-child > button:last-child{
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  outline: 3px solid transparent;
+  cursor: pointer;
+  border: 3px solid green;
+  transition: background-color .5s;
+}
+section:nth-child(1) > p:last-child > button:last-child:hover{
+  border-radius: 5px;
+  outline: 1px solid rgb(210, 255, 210);
+  background-color: rgb(199, 247, 199);
+}
+section:nth-child(1) > p:last-child > button:last-child:active{
+  background-color: green;
+  color: #fff;
+}
+section:nth-child(1) > p:last-child > button{
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  outline: 3px solid transparent;
+  cursor: pointer;
+  border: 3px solid rgb(255, 0, 0);
+  transition: background-color .5s;
+}
+section:nth-child(1) > p:last-child > button:hover{
+  border-radius: 5px;
+  outline: 1px solid rgb(255, 210, 210);
+  background-color: rgb(247, 199, 199);
+}
+section:nth-child(1) > p:last-child > button:active{
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+}
+section:nth-child(1) > p > input,
+section:nth-child(1) > p > textarea,
+section:nth-child(1) > p > select{
+  outline: 3px solid transparent;
+  transition: outline .2s ease-in;
+}
+section:nth-child(1) > p > input:focus,
+section:nth-child(1) > p > textarea:focus,
+section:nth-child(1) > p > select:focus{
+  outline-color:rgb(176, 196, 241);
+}
+section:nth-child(1) > p > label, 
+section:nth-child(1) > p > input,
+section:nth-child(1) > p > textarea,
+section:nth-child(1) > p > select{
+  outline: 2px solid transparent;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+}
+#gerar{
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 80px 20px #000;
+  
+}
+#copy1,
+#hotkey{
+  border-radius: 5px;
+  max-width: 100%;
+  padding: 15px;
+  overflow: auto;
+  transition: background-color .1s ease-in;
+}
+#copy1:hover,
+#hotkey:hover{
+  background-color: rgb(216, 216, 216);
+}
+#gerar > div{
+  position: relative;
+}
+#gerar > a{
+  z-index: 100;
+  margin: 10px;
+  position: absolute;
+  text-decoration: none;
+  top: 0px;
+  right: 0px;
+  color: red;
+  font-size: 15pt;
+}
+#gerar > p,
+#copy1 > p,
+#hotkey > p{
+  padding: 5px;
+}
+.copy1,
+.copy2{
+  background-color: transparent;
+  border: none;
+  font-size: 20pt;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.copy1:hover,
+.copy2:hover,
+.copy3:hover,
+.copy4:hover{
+  color: rgb(153, 153, 153);
+}
+
+
+#tags-implement > p,
+#bads > p{
+  padding: 5px;
+}
+[type*="checkbox"]{
+  margin-right: 5px;
+}
+#tags-implement > p,
+#bads > p{
+  display: flex;
+  align-items: center
+}
+
+#tags-implement > p > label,
+#bads > p > label{
+  cursor: pointer;
+  max-width: 700px;
+  padding: 5px;
+}
+#bads > p:first-child > label:hover,
+#tags-implement > p:first-child > label:hover{
+  background-color: transparent;
+}
+#bads > p > label:hover,
+#tags-implement > p > label:hover{
+  background-color: rgb(48, 111, 204);
+}
+
+#other,
+#bval-other{
+  width: 300px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(103, 159, 255);
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+}
+#bval-other::placeholder,
+#other::placeholder{
+  color: #fff;
+}
+#bval-other:hover,
+#other:hover{
+  background-color: rgb(158, 194, 255);
+}
+#bval-other:focus,
+#other:focus{
+  background-color: #fff;
+  color: #000;
+}
+input[type="checkbox"]{
+  display: block;
+  cursor: pointer;
+  width: 20px !important;
+  height: 20px !important;
+}
+.copy3,
+.copy4{
+  background-color: transparent;
+  border: none;
+  font-size: 15pt;
+  padding: 5px;
+  cursor: pointer;
+}
+.copy3:hover,
+.copy4:hover{
+  color: rgb(153, 153, 153);
+}
