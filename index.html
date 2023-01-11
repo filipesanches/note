@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comentario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <a href="https://docs.google.com/presentation/d/1Jra4de31rYaFZ0JMH_CiVzr2S3F8J1qcUcJRaw0Lw5Q/edit?hl=pt-BR&forcehl=1#slide=id.g11ce864e316_294_6" target="_blank"><i class="fa-solid fa-circle-info"></i></a>
+    <p>
+      <label for="sepekeasy">Speakeasy ID:</label>
+      <input data-comentario="comentario" type="text" name="sepekeasy" id="sepekeasy">
+    </p>
+    <p>
+      <label for="substatus">Substatus:</label>
+      <select data-comentario="comentario" name="substatus" id="substatus">
+      </select>
+    </p>
+    <p>
+      <label for="reason">Reason/Comments:</label>
+      <input data-comentario="comentario" type="text" name="reason" id="reason">
+    </p>
+    <p>
+      <label for="comments">On Call Comments:</label>
+      <textarea data-comentario="comentario" name="comments" id="comments" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+      <label for="">Tags Implemented:</label>
+      <input data-comentario="comentario" type="text" name="valor" id="valor" style="display: none;">
+    </p>
+    <div id="tags-implement">
+      <p>
+        <input type="checkbox" name="tag" id="tag">
+        <label for="tag"><input type="text" name="other" id="other" placeholder="Other"></label>
+      </p>
+    </div>
+    <p>
+      <label for="screenshots">Screenshots:</label>
+      <textarea data-comentario="comentario" name="screenshots" id="screenshots" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+      <label for="mcids">Multiple CIDs:</label>
+      <input data-comentario="comentario" type="text" name="mcids" id="mcids">
+    </p>
+    <p>
+      <label for="oncall">On Call( Call Started) signaled on time?:</label>
+      <input data-comentario="comentario" type="text" name="oncall" id="oncall">
+    </p>
+    <p>
+      <label for="">*Bad Lead:</label>
+      <input data-comentario="comentario" name="bad" id="bad" style="display: none;">
+    </p>
+    <div id="bads">
+      <p>
+        <input type="checkbox" name="bval" id="bval">
+        <label for="bval"><input type="text" name="bval-other" id="bval-other" placeholder="Other"></label>
+      </p>
+    </div>
+    <p>
+      <button>RESET</button>
+      <button>GERAR</button>
+    </p>
+  </section>
+  <section id="gerar">
+    <a href="javascript:void(0)"><i class="fa-regular fa-circle-xmark"></i></a>
+    <div>
+      <div id="copy1">
+        <p id="data"></p>
+        <p><b>Speakeasy ID:</b> <span></span></p>
+        <p><b>Substatus:</b> <span></span></p>
+        <p><b>Reason/Comments:</b> <span></span></p>  
+        <p><b>On Call Comments:</b> <span></span></p>    
+        <p><b>Tags Implemented:</b> <span></span></p>
+        <p><b>Screenshots:</b> <span></span></p>
+        <p><b>Multiple CIDs:</b> <span></span></p>
+        <p><b>On Call( Call Started) signaled on time?:</b> <span></span></p>    
+        <p><b>*Bad Lead:</b> <span></span></p>
+      </div>
+      <p>
+        <button class="copy1" data-clipboard-target="#copy1">
+          <i class="fa-regular fa-copy"></i>
+        </button>
+      </p>
+    </div>
+    <div id="hotkey">
+    </div>
+  </section>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./clipboard.js-master/dist/clipboard.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
+
+
