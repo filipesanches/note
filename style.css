@@ -106,7 +106,7 @@ section:nth-child(1) > p > select{
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,210%);
+  transform: translate(-50%,190%);
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 10px;
